@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <title>Exercice 2</title>
+  </head>
+  <body>
+    <button type="button" id="increase">+</button>
+    <button type="button" id="decrease">-</button>
+    <input type="text" id="number" />
+    <script>
+      number = 0;
+      $(function() {
+        $('#increase').click(function() {
+          $('#number').val(++number);
+        });
+        $('#decrease').click(function() {
+          $('#number').val(--number);
+        });
+      });
+    </script>
+  </body>
+</html>
